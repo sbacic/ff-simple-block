@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Simple Block",
+    "description": "Block time-wasting websites.",
+    "version": "1.0",
+    "browser_specific_settings": {
+      "gecko": {
+        "strict_min_version": "60.0a1"
+      }
+    },
+    "background": {
+      "scripts": [
+        "background/proxy.js"
+      ]
+    },
+    "options_ui": {
+      "page": "ui/options.html",
+      "browser_style": true
+    },
+    "permissions": ["proxy", "storage", "<all_urls>"]
+  }

@@ -1,0 +1,22 @@
+h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+h2 {
+    margin: 0.5em;
+    padding-bottom: 1em;
+    box-sizing: border-box;
+}
+
+#blocked {
+    display: block;
+    width: calc(100% - 1em);
+    margin: 0.5em;
+    padding: 0.5em;
+    box-sizing: border-box;
+    height: 20em;
+    display: block;
+    resize: none;
+}
