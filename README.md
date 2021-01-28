@@ -11,4 +11,5 @@ Furthermore, because it needs to be manually signed and built, you don't have to
 ## Build instructions.
 
 1. Run `npm i -g web-ext`.
-2. Run `web-ext sign --api-key=<APIKEY> --api-secret=<APISECRET> --ignore-files=.git/**/**,.gitignore,web-ext-artifacts/**`
+2. Generate the API key and secret at https://addons.mozilla.org/en-US/developers/addon/api/key/.
+3. Run `web-ext sign --api-key=<APIKEY> --api-secret=<APISECRET> --ignore-files=.git/**/**,.gitignore,web-ext-artifacts/**`
