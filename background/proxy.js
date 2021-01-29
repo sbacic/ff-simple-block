@@ -42,7 +42,7 @@ function hasMatch(blacklist, hostname) {
 function handleRequest(request) {
     const url = new URL(request.url);
 
-    if (blacklist.length && hasMatch(blacklist, url.hostname)) {
+    if (blacklist.filter(value => value !== "").length && hasMatch(blacklist, url.hostname)) {
         return {type: "http", host: "127.0.0.1", port: 6666};
     } else {
         return {type: "direct"};
