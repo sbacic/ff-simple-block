@@ -5,7 +5,7 @@ function populateBlacklist(storage) {
 
 function updateBlacklist() {
     const textarea = document.querySelector("#blocked");
-    const blacklist = textarea.value.split("\n");
+    const blacklist = textarea.value.trim().split("\n");
 
     browser.storage.local.set({
         blacklist
